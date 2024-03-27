@@ -1,0 +1,23 @@
+h1 {
+  font-size: 40px;
+  margin-top: 0px;
+  background-image: url("images/book.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 100px;
+  margin-bottom: 0px;
+  text-align: center;
+  }
+
+.h {
+  width: 25%;
+  font-size: 20px;
+  background-color: rgb(5, 72, 117);
+  color: white;
+}
+
+.r {
+    text-align: center;
+    font-size: 15px;
+}

@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="user_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Aavishkar Institute</title>
+    <link rel="stylesheet" href="headerstyle.css" />
+  	<link rel="icon" type="image/ico" href="~/images/favicon.ico" />
+   
+    <style>
+  		.f1{
+  		    font-family: 'Times New Roman', Times, serif;
+  		    font-size: 25px;
+  		    text-align: center;
+  		    padding: 10px;
+  		    background-color: rgba(0, 0, 0, 0.829);
+  		    color: white;
+            margin-top: 80px;
+		    }
+	</style>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header"><span class="openbtn" onclick="openNav()">☰ &nbsp;Aavishkar Institute</span></div>
+	<div id="mySidepanel" class="sidepanel">
+  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  	<a href="Default.aspx">Home</a>
+  	<a href="admission.aspx">Admission</a>
+  	<a href="courses.aspx">Courses</a>
+  	<a href="messages.aspx">Messages</a>
+  	<a href="studquery.aspx">Student Query</a>
+  	<a href="lv_app.aspx">Leave Application</a>
+  	<a href="feedback.aspx">Feedback</a>
+  	<a href="profile.aspx">Profile</a>
+  	<a href="chngpswd.aspx">Change Password</a>
+  	<a href="logout.aspx">Logout</a>
+	</div>	
+   
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </div>
+
+    <div>
+        <footer>
+            <div class="f1">Developed By : Tanu Sharma</div>
+        </footer>
+    </div> 
+</body>
+</html>
